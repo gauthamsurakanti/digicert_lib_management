@@ -25,9 +25,8 @@ A production-ready library management system built with **Go**, featuring clean 
 
 ### 1. Clone and Setup
 ```bash
-git clone <your-repo-url>
-cd library-management
-cp .env.example .env
+git clone https://github.com/gauthamsurakanti/digicert_lib_management.git
+cd digicert_lib_management
 ```
 
 ### 2. Start with Docker Compose (Recommended)
