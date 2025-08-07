@@ -25,16 +25,19 @@ A production-ready library management system built with **Go**, featuring clean 
 
 ### 1. Clone and Setup
 ```bash
-git clone <your-repo-url>
-cd library-management
+git clone https://github.com/gauthamsurakanti/digicert_lib_management.git
+cd digicert_lib_management
 cp .env.example .env
 ```
 
-### 2. Start with Docker Compose (Recommended)
+### 2. Start Docker
+1. Start Docker Desktop from /Applications (Recommended)
+
+### 3. Start with Docker Compose (Recommended)
 ```bash
-make docker-up
-# or
 docker-compose up -d
+#or 
+make docker-up
 ```
 
 ### 3. Verify Installation
@@ -67,14 +70,14 @@ curl http://localhost:8080/health
 curl -X POST http://localhost:8080/api/v1/books \
   -H "Content-Type: application/json" \
   -d '{
-    "title": "The Go Programming Language",
-    "author": "Alan Donovan",
-    "isbn": "978-0134190440",
-    "publisher": "Addison-Wesley",
+    "title": "Applied Cryptography",
+    "author": "Bruce Schneier",
+    "isbn": "978-1119096726",
+    "publisher": "Wiley",
     "publish_year": 2015,
-    "genre": "Programming",
-    "pages": 380,
-    "description": "Comprehensive guide to Go programming"
+    "genre": "Cybersecurity",
+    "pages": 784,
+    "description": "Classic guide covering practical cryptographic protocols and algorithms."
   }'
 ```
 
